@@ -1,0 +1,12 @@
+name: Build & Deploy
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare workspace
+        run: echo "complete"
